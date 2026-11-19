@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wood: #3f7d3a;
+  --color-brick: #b5532f;
+  --color-wool: #9ccc65;
+  --color-grain: #e6c34a;
+  --color-ore: #7d8590;
+  --color-desert: #d9c28f;
+  --color-sea: #2b6ea6;
+}

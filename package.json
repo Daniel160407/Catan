@@ -1,0 +1,39 @@
+{
+  "name": "hex-settlers",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck",
+    "db:types": "supabase gen types typescript --linked > shared/types/database.types.ts",
+    "db:push": "supabase db push"
+  },
+  "dependencies": {
+    "@nuxtjs/supabase": "^2.1.0",
+    "@pinia/nuxt": "^1.0.3",
+    "@supabase/supabase-js": "^2.119.1",
+    "@tailwindcss/vite": "^4.3.5",
+    "@vueuse/core": "^15.0.0",
+    "@vueuse/nuxt": "^15.0.0",
+    "nuxt": "^4.6.4",
+    "pinia": "^4.1.0",
+    "tailwindcss": "^4.3.5",
+    "vue": "^3.5.45",
+    "vue-router": "^5.4.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "supabase"
+    ]
+  },
+  "devDependencies": {
+    "supabase": "^3.2.0",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.3.14"
+  }
+}
